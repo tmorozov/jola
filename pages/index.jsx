@@ -1,5 +1,9 @@
-function HomePage() {
-  return <div>Welcome to Next.js!</div>;
-}
+import Link from "next/link";
 
-export default HomePage;
+export default function Home() {
+  return (
+    <div>
+      Hello World. <Link href="/about">About</Link>
+    </div>
+  );
+}
